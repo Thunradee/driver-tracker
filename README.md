@@ -1,11 +1,14 @@
 # Driver Tracker API
 
-## Inroduction
+<details>
+  <summary>Inroduction</summary>
 This project aims to create an REST-API to be used with an application to monitor a driver's work hours to follow federal regulations on how many hours a driver can work and operate behind a vehicle. According to federal regulations, professional drivers must refrain from working more than 14 hours per day, with no more than 11 of their work hours being driving hours. Furthermore, drivers must take 10 consecutive hours of "off-work" time prior to working each full shift. The API allows an application to request GET, POST, PUT, and DELETE work events, as well as request GET events summary. For the purpose of this project, this API considers only one driver.
-
-## Technologies
+</details>
+<details>
+  <summary>Technologies</summary>
 - Python 3.8
 - djangorestframework 3.12.4
+ </details>
 
 <details>
   <summary>Endpoints</summary>
