@@ -81,3 +81,10 @@ Includes two clocks (DRIVE_CLOCK and WORK_CLOCK)
 6. The server is now up and running and the endpoints are ready for you!
 
 To work with the endpoints you migth need other tools such as [Postman](https://www.postman.com/)
+
+## Test Cases
+You can find test files in ```driver-tracker/driverTracker/api/tests```. To run the test, change directory to 'driverTracker' and run below command line.
+
+```
+python manage.py test
+```
