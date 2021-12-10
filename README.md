@@ -1,13 +1,13 @@
 # Driver Tracker API
 ## Inroduction
-This project aims to create an REST-API to be used with an application to monitor a driver's work hours to follow federal regulations on how many hours a driver can work and operate behind a vehicle. According to federal regulations, professional drivers must refrain from working more than 14 hours per day, with no more than 11 of their work hours being driving hours. Furthermore, drivers must take 10 consecutive hours of "off-work" time prior to working each full shift. The API allows an application to request GET, POST, PUT, and DELETE work events, as well as request GET events summary. For the purpose of this project, this API considers only one driver.
+This project aims to create a REST-API to be used with an application to monitor a driver's work hours to follow federal regulations on how many hours a driver can work and operate behind a vehicle. According to federal regulations, professional drivers must refrain from working more than 14 hours per day, with no more than 11 of their work hours being driving hours. Furthermore, drivers must take 10 consecutive hours of "off-work" time prior to working each full shift. The API allows an application to request GET, POST, PUT, and DELETE work events, as well as request GET events summary. For the purpose of this project, this API considers only one driver.
 
 ## Technologies
 - Python 3.8
 - djangorestframework 3.12.4
 
 ## Endpoints
-This API has coverage for retrieving, creating, updating and deleting work event data in JSON format. Moreover, you can get event summaries which presented as DRIVE_CLOCK and WORK_CLOCK in form of JSON data.
+This API has coverage for retrieving, creating, updating and deleting work event data in JSON format. Moreover, you can get event summaries which are presented as DRIVE_CLOCK and WORK_CLOCK in the form of JSON data.
 
 ### Event
 An event represents driver's activity and time duration
@@ -26,7 +26,7 @@ An event represents driver's activity and time duration
     ```
 
 ### Events Summary
-Events summary summarizes all events and present in forms of DRIVE_CLOCK and WORK_CLOCK. This endpoint gives you events summary data in JSON format
+Events summary summarizes all events and presents them as DRIVE_CLOCK and WORK_CLOCK. This endpoint gives you events summary data in JSON format
 
 ```
 http://127.0.0.1:8000/api/v1/clocks/
@@ -72,7 +72,7 @@ Includes two clocks (DRIVE_CLOCK and WORK_CLOCK)
   pip install -r requirements.txt
   ```
 
-5. Change directory to 'driverTracker' and run below command line to starts the development server
+5. Change directory to 'driverTracker' and run below command line to start the development server
 
   ```
   python manage.py runserver
@@ -80,7 +80,7 @@ Includes two clocks (DRIVE_CLOCK and WORK_CLOCK)
 
 6. The server is now up and running and the endpoints are ready for you!
 
-To work with the endpoints you migth need other tools such as [Postman](https://www.postman.com/)
+To work with the endpoints you might need other tools such as [Postman](https://www.postman.com/)
 
 ## Test Cases
 You can find test files in ```driver-tracker/driverTracker/api/tests```. To run the test, change directory to 'driverTracker' and run below command line.
